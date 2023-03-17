@@ -4413,53 +4413,50 @@
 
 // <!-- Stack -->
 
+// import java.util.Scanner;
+// import java.util.Stack;
+
+// class Test{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         Stack<Integer> s=new Stack<>();
+//         s.push(5);
+//         System.out.println(s.peek());
+//         if(s.pop()==0);{
+//             System.out.println("Empty");
+//         }
+//         s.push(23);
+//         s.push(36);
+//         int var=s.pop();
+//         System.out.println(var);
+//         System.out.println(s.peek());
+//         s.push(43);
+//         System.out.println(s);
+//     }
+// }
+
+
+
+// <!-- ArrauDeque -->
+
 import java.util.Scanner;
-import java.util.Stack;
+import java.util.ArrayDeque;
 
 class Test{
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
-        Stack<Integer> s=new Stack<>();
-        s.push(5);
-        if(s.pop()==0);{
-            System.out.println("Empty");
-        }
-        s.push(23);
-        s.push(36);
-        int var=s.pop();
-        System.out.println(var);
-        System.out.println(s.peek());
-        s.push(43);
-        System.out.println(s);
+        ArrayDeque<Integer> ad=new ArrayDeque<>();
+        ad.push(sc.nextInt());
+        ad.push(sc.nextInt());
+        ad.push(sc.nextInt());
+        ad.push(sc.nextInt());
+        System.out.println(ad);
+        System.out.println(ad.pop());
+        System.out.println(ad);
+        System.out.println(ad.pop());
+        System.out.println(ad);
     }
 }
 
 
 
-// <!-- Array  implementation of stack -->
-
-// Eg:1
-
-// import java.util.Scanner;
-
-// class Stack{
-//     int push(int x){
-        
-//     }
-//     int pop(){
-
-//     }
-//     int peek(){
-
-//     }
-// }
-
-// class Test{
-//     public static void main(String[] args){
-//         Scanner sc=new Scanner(System.in);
-//         MyStack ms=new MyStack(10);
-//         int n=sc.nextInt();
-//         while(n!=0){
-//         }
-//     }
-// }
