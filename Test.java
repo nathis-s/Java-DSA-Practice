@@ -4413,27 +4413,26 @@
 
 // <!-- Stack -->
 
-// import java.util.Scanner;
-// import java.util.Stack;
+import java.util.Scanner;
+import java.util.Stack;
 
-// class Test{
-//     public static void main(String[] args){
-//         Scanner sc=new Scanner(System.in);
-//         Stack<Integer> s=new Stack<>();
-//         s.peek();
-//         s.push(5);
-//         if(s.pop()==0);{
-//             System.out.println("Empty");
-//         }
-//         s.push(23);
-//         s.push(36);
-//         int var=s.pop();
-//         System.out.println(var);
-//         System.out.println(s.peek());
-//         s.push(43);
-//         System.out.println(s);
-//     }
-// }
+class Test{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        Stack<Integer> s=new Stack<>();
+        s.push(5);
+        if(s.pop()==0);{
+            System.out.println("Empty");
+        }
+        s.push(23);
+        s.push(36);
+        int var=s.pop();
+        System.out.println(var);
+        System.out.println(s.peek());
+        s.push(43);
+        System.out.println(s);
+    }
+}
 
 
 
@@ -4441,26 +4440,26 @@
 
 // Eg:1
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
-class Stack{
-    int push(int x){
+// class Stack{
+//     int push(int x){
         
-    }
-    int pop(){
+//     }
+//     int pop(){
 
-    }
-    int peek(){
+//     }
+//     int peek(){
 
-    }
-}
+//     }
+// }
 
-class Test{
-    public static void main(String[] args){
-        Scanner sc=new Scanner(System.in);
-        MyStack ms=new MyStack(10);
-        int n=sc.nextInt();
-        while(n!=0){
-        }
-    }
-}
+// class Test{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         MyStack ms=new MyStack(10);
+//         int n=sc.nextInt();
+//         while(n!=0){
+//         }
+//     }
+// }
