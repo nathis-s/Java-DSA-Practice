@@ -4439,24 +4439,70 @@
 
 // <!-- ArrauDeque -->
 
+// import java.util.Scanner;
+// import java.util.ArrayDeque;
+
+// class Test{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         ArrayDeque<Integer> ad=new ArrayDeque<>();
+//         ad.push(sc.nextInt());
+//         ad.push(sc.nextInt());
+//         ad.push(sc.nextInt());
+//         ad.push(sc.nextInt());
+//         System.out.println(ad);
+//         System.out.println(ad.pop());
+//         System.out.println(ad);
+//         System.out.println(ad.pop());
+//         System.out.println(ad);
+//     }
+// }
+
+
+
+// <!-- Previous greater element using stack -->
+
 import java.util.Scanner;
-import java.util.ArrayDeque;
+import java.util.Stack;
+
+class previousgreater{
+    void ispreviousgreater(int arr[],int n){
+        Stack<Integer> s=new Stack<>();
+        int res[]=new int[n];
+        int val=-1;
+        for(int i=0;i<n;i++){
+            if(i==0){
+                s.push(arr[i]);
+                res[i]=val;
+                continue;
+            }
+            while(s.size()!=0 && arr[i]>=s.peek()){
+                s.pop();
+            }
+            if(s.size()==0){
+                res[i]=val;
+            }
+            else{
+                res[i]=s.peek();
+            }
+            s.push(arr[i]);
+        }
+        for(int i=0;i<n;i++){
+            System.out.print(res[i] +" ");
+        }
+        return;
+    }
+}
 
 class Test{
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
-        ArrayDeque<Integer> ad=new ArrayDeque<>();
-        ad.push(sc.nextInt());
-        ad.push(sc.nextInt());
-        ad.push(sc.nextInt());
-        ad.push(sc.nextInt());
-        System.out.println(ad);
-        System.out.println(ad.pop());
-        System.out.println(ad);
-        System.out.println(ad.pop());
-        System.out.println(ad);
+        int n=sc.nextInt();
+        int arr[]=new int[n];
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+        }
+        previousgreater pg=new previousgreater();
+        pg.ispreviousgreater(arr,n);
     }
 }
-
-
-
