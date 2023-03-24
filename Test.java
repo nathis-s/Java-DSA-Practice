@@ -4675,3 +4675,90 @@
 //         rp.left_most_repeat(str);
 //     }
 // }
+
+
+
+// <!-- reverse word in string -->
+// Eg:1 - using stack
+
+// import java.util.Scanner;
+// import java.util.Stack;
+
+// class reverse{
+//     void reverse_word(String str){
+//         Stack<String> sk=new Stack<>();
+//         String str2="";
+//         for(int i=0;i<str.length();i++){
+//             if(str.charAt(i)!=' '){
+//                 str2=str2+str.charAt(i);
+//             }
+//             else{
+//                 sk.push(str2);
+//                 str2="";
+//             }
+//         }    
+//         if(str2!=""){
+//             sk.push(str2);
+//         }
+//         str2="";
+//         while(sk.isEmpty()==false){
+//            str2=str2+sk.pop()+" ";
+//         }
+//         System.out.println(str2);
+//     }
+// }
+
+// class Test{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         String str=sc.nextLine();
+//         reverse rv=new reverse();
+//         rv.reverse_word(str);
+//     }
+// }
+
+
+
+// Eg:2 - Time limit exceeded method
+
+// import java.util.Scanner;
+
+// class reverse{
+//     void reverse_word(String str){
+//         int start=0;
+//         int end=0;
+//         String str2="";
+//         for(int i=0;i<str.length();i++){
+//             if(str.charAt(i)==' '){
+//                 end=i-1;
+//                 while(start<=end){
+//                     str2+=str.charAt(end);
+//                     end--;
+//                 }
+//                 str2+=" ";
+//                 start=i+1;
+//             }
+//         }
+//         end=str.length()-1;
+//         while(start<=end){
+//             str2+=str.charAt(end);
+//             end--;
+//         }
+//         System.out.print(str2);
+//         System.out.println();
+//         String str3="";
+//         for(int i=str2.length()-1;i>=0;i--){
+//             str3+=str2.charAt(i);
+//         }
+//         System.out.print(str3);
+//     }
+// }
+
+// class Test{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         String str=sc.nextLine();
+//         reverse rv=new reverse();
+//         rv.reverse_word(str);
+//     }
+// }
