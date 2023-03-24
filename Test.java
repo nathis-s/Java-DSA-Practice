@@ -1986,7 +1986,7 @@
 
 
 
-// <!--   Set -->
+// <!-- HashSet -->
 
 //import java.util.Scanner;
 //import java.util.HashSet;
@@ -4462,47 +4462,216 @@
 
 // <!-- Previous greater element using stack -->
 
-import java.util.Scanner;
-import java.util.Stack;
+// import java.util.Scanner;
+// import java.util.Stack;
 
-class previousgreater{
-    void ispreviousgreater(int arr[],int n){
-        Stack<Integer> s=new Stack<>();
-        int res[]=new int[n];
-        int val=-1;
-        for(int i=0;i<n;i++){
-            if(i==0){
-                s.push(arr[i]);
-                res[i]=val;
-                continue;
-            }
-            while(s.size()!=0 && arr[i]>=s.peek()){
-                s.pop();
-            }
-            if(s.size()==0){
-                res[i]=val;
-            }
-            else{
-                res[i]=s.peek();
-            }
-            s.push(arr[i]);
-        }
-        for(int i=0;i<n;i++){
-            System.out.print(res[i] +" ");
-        }
-        return;
-    }
-}
+// class previousgreater{
+//     void ispreviousgreater(int arr[],int n){
+//         Stack<Integer> s=new Stack<>();
+//         int res[]=new int[n];
+//         int val=-1;
+//         for(int i=0;i<n;i++){
+//             if(i==0){
+//                 s.push(arr[i]);
+//                 res[i]=val;
+//                 continue;
+//             }
+//             while(s.size()!=0 && arr[i]>=s.peek()){
+//                 s.pop();
+//             }
+//             if(s.size()==0){
+//                 res[i]=val;
+//             }
+//             else{
+//                 res[i]=s.peek();
+//             }
+//             s.push(arr[i]);
+//         }
+//         for(int i=0;i<n;i++){
+//             System.out.print(res[i] +" ");
+//         }
+//         return;
+//     }
+// }
 
-class Test{
-    public static void main(String[] args){
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int arr[]=new int[n];
-        for(int i=0;i<n;i++){
-            arr[i]=sc.nextInt();
-        }
-        previousgreater pg=new previousgreater();
-        pg.ispreviousgreater(arr,n);
-    }
-}
+// class Test{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         int n=sc.nextInt();
+//         int arr[]=new int[n];
+//         for(int i=0;i<n;i++){
+//             arr[i]=sc.nextInt();
+//         }
+//         previousgreater pg=new previousgreater();
+//         pg.ispreviousgreater(arr,n);
+//     }
+// }
+
+
+
+// <!-- Array implementaion using Stack -->
+
+// import java.util.Arrays;
+// import java.util.Scanner;
+
+//  class MyStack{
+//     int arr[];
+//     int top;
+//     MyStack(int input){
+//         arr=new int[input];
+//         top=-1;
+//     }
+//     void push(int x){
+//         top++;
+//         arr[top]=x;
+//     }
+//     void pop(){
+//         if(top>=0){
+//             arr[top]=0;
+//             top--;
+//         }
+//     }
+//     int peek(){
+//         if(top==-1){
+//             return 0;
+//         }
+//         return arr[top];
+//     }
+//     int size(){
+//         return top+1;
+//     }
+//     boolean isempty(){
+//         if(top==-1){
+//             return true;
+//         }
+//         return false;
+//     }
+//  }
+
+// class Test{
+//     public static void main(String[] args){
+//             Scanner sc = new Scanner(System.in);
+//             int n=sc.nextInt();
+//             MyStack s=new MyStack(n);
+//             s.push(sc.nextInt());
+//             for(int i=0;i<s.arr.length;i++){
+//                 System.out.print(s.arr[i]+" ");
+//             }
+//             System.out.println();
+//             s.pop();
+//             s.push(sc.nextInt());
+//             s.push(sc.nextInt());
+//             System.out.println(s.peek());
+//             s.pop();
+//             for(int i=0;i<s.arr.length;i++){
+//                 System.out.print(s.arr[i]+" ");
+//             }
+//             System.out.println();
+//             System.out.println(s.peek());
+//             s.push(sc.nextInt());
+//             for(int i=0;i<s.arr.length;i++){
+//                 System.out.print(s.arr[i]+" ");
+//             }
+//             System.out.println();
+//             sc.close();
+//     }
+// }
+
+
+
+// <!-- Leftmost repeating character -->
+// Eg:1
+
+// import java.util.Scanner;
+
+// class repeat{
+//     void left_most_repeat(String str){
+//         for(int i=0;i<str.length();i++){
+//             for(int j=i+1;j<str.length();j++){
+//                 if(str.charAt(i)==str.charAt(j)){
+//                     System.out.println(i);
+//                     return;
+//                 }
+//             }
+//         }
+//         System.out.println("-1");
+//         return;
+//     }
+// }
+
+// class Test{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         String str=sc.nextLine();
+//         repeat rp=new repeat();
+//         rp.left_most_repeat(str);
+//     }
+// }
+
+
+
+// Eg:2
+
+// import  java.util.Scanner;
+
+// class repeat{
+//     void left_most_repeat(String str){
+//         int arr[]=new int[26];
+//         int j=0;
+//         for(int i=0;i<str.length();i++){
+//             j=str.charAt(i)-'a';
+//             arr[j++]++;
+//         }
+//         for(int i=0;i<str.length();i++){
+//             if(arr[str.charAt(i)-'a']>1){
+//                 System.out.println(i);
+//                 return;
+//             }
+//         }
+//         System.out.println("-1");
+//         return;
+//     }
+// }
+
+// class Test{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         String str=sc.nextLine();
+//         repeat rp=new repeat();
+//         rp.left_most_repeat(str);
+//     }
+// }
+
+
+
+// <!-- Leftmost non repeating character -->
+
+// import  java.util.Scanner;
+
+// class repeat{
+//     void left_most_repeat(String str){
+//         int arr[]=new int[26];
+//         int j=0;
+//         for(int i=0;i<str.length();i++){
+//             j=str.charAt(i)-'a';
+//             arr[j++]++;
+//         }
+//         for(int i=0;i<str.length();i++){
+//             if(arr[str.charAt(i)-'a']==1){
+//                 System.out.println(i);
+//                 return;
+//             }
+//         }
+//         System.out.println("-1");
+//         return;
+//     }
+// }
+
+// class Test{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         String str=sc.nextLine();
+//         repeat rp=new repeat();
+//         rp.left_most_repeat(str);
+//     }
+// }
