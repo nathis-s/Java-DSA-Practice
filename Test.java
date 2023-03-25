@@ -4679,7 +4679,7 @@
 
 
 // <!-- reverse word in string -->
-// Eg:1 - using stack
+// Eg:1 - using stack - time complexity is satified but it takes extra space
 
 // import java.util.Scanner;
 // import java.util.Stack;
@@ -4762,3 +4762,50 @@
 //         rv.reverse_word(str);
 //     }
 // }
+
+
+
+// <!-- Pattern searching -->
+// Eg:1 - Naive solution
+
+import java.util.Scanner;
+
+class pattern{
+    void pattern_search(String str,String pat){
+        int n=str.length();
+        int m=pat.length();
+        if(n>m){
+            n=n+1-m;
+        }
+        else if(n<m){
+            return;
+        }
+        for(int i=0;i<n;i++){
+            int flag=0;
+            int j=0;
+            if(str.charAt(i)==pat.charAt(j)){
+                int index=i;
+                for(j=0;j<m;j++) {
+                    if(str.charAt(index++)!=pat.charAt(j)){
+                        flag=1;
+                        break;
+                    }
+                }
+                if(flag==0){
+                    System.out.println("Starting point : "+i);
+                    System.out.println("End point : "+(index-1));
+                }
+            }
+        }
+    }
+}
+
+class Test{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        String str=sc.nextLine();
+        String pat=sc.nextLine();
+        pattern pt=new pattern();
+        pt.pattern_search(str,pat);
+    }
+}
