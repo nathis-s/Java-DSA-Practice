@@ -4768,44 +4768,208 @@
 // <!-- Pattern searching -->
 // Eg:1 - Naive solution
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
-class pattern{
-    void pattern_search(String str,String pat){
-        int n=str.length();
-        int m=pat.length();
-        if(n>m){
-            n=n+1-m;
-        }
-        else if(n<m){
-            return;
-        }
-        for(int i=0;i<n;i++){
-            int flag=0;
-            int j=0;
-            if(str.charAt(i)==pat.charAt(j)){
-                int index=i;
-                for(j=0;j<m;j++) {
-                    if(str.charAt(index++)!=pat.charAt(j)){
-                        flag=1;
-                        break;
-                    }
-                }
-                if(flag==0){
-                    System.out.println("Starting point : "+i);
-                    System.out.println("End point : "+(index-1));
-                }
-            }
-        }
-    }
-}
+// class pattern{
+//     void pattern_search(String str,String pat){
+//         int n=str.length();
+//         int m=pat.length();
+//         if(n>m){
+//             n=n+1-m;
+//         }
+//         else if(n<m){
+//             return;
+//         }
+//         for(int i=0;i<n;i++){
+//             int flag=0;
+//             int j=0;
+//             if(str.charAt(i)==pat.charAt(j)){
+//                 int index=i;
+//                 for(j=0;j<m;j++) {
+//                     if(str.charAt(index++)!=pat.charAt(j)){
+//                         flag=1;
+//                         break;
+//                     }
+//                 }    
+//                 if(flag==0){
+//                     System.out.println("Starting point : "+i);
+//                     System.out.println("End point : "+(index-1));
+//                 }
+//             }
+//         }
+//     }
+// }
 
-class Test{
-    public static void main(String[] args){
-        Scanner sc=new Scanner(System.in);
-        String str=sc.nextLine();
-        String pat=sc.nextLine();
-        pattern pt=new pattern();
-        pt.pattern_search(str,pat);
-    }
-}
+// class Test{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         String str=sc.nextLine();
+//         String pat=sc.nextLine();
+//         pattern pt=new pattern();
+//         pt.pattern_search(str,pat);
+//     }
+// }
+
+
+
+// <!-- Pattern searching for distinct patttern -->
+
+// import java.util.Scanner;
+
+// class pattern{
+//     void pattern_search(String str,String pat){
+//         int n=str.length();
+//         int m=pat.length();
+//         if(n>m){
+//             n=n+1-m;
+//         }
+//         else if(n<m){
+//             return;
+//         }
+//         for(int i=0;i<n;i++){
+//             int flag=0;
+//             int j=0;
+//             if(str.charAt(i)==pat.charAt(j)){
+//                 int index=i;
+//                 for(j=0;j<m;j++) {
+//                     if(str.charAt(index++)!=pat.charAt(j)){
+//                         flag=1;
+//                         break;
+//                     }
+//                 }
+//                 if(flag==0){
+//                     System.out.println("Starting point : "+i);
+//                     System.out.println("End point : "+(index-1));
+//                     i=index;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// class Test{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         String str=sc.nextLine();
+//         String pat=sc.nextLine();
+//         pattern pt=new pattern();
+//         pt.pattern_search(str,pat);
+//     }
+// }
+
+
+
+// <!-- Check if strings are rotations of each other or not -->
+
+// import java.util.Scanner;
+
+// class rotation{
+//     boolean check_rotation(String s1,String s2){
+//         if(s1.length()!=s2.length()){
+//             return false;
+//         }
+//         int n=s1.length();
+//         String str1=s1;
+//         while(n!=0){
+//             String str2="";
+//             String str3="";
+//             str2=str2+str1.charAt(0);
+//             for(int i=str1.length()-1;i>0;i--){
+//                 str2=str2+str1.charAt(i);
+//             }
+//             for(int i=str1.length()-1;i>=0;i--){
+//                 str3=str3+str2.charAt(i);
+//             }            
+//             int flag=0;
+//             for(int i=0;i<str3.length();i++){
+//                 if(str3.charAt(i)!=s2.charAt(i)){
+//                     flag=1;
+//                 }
+//             }
+//             if(flag==0){
+//                 return true;
+//             }
+//             str1=str3;
+//             n--;
+//         }
+//         return false;
+//     }
+// }
+
+// class Test{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         String s1=sc.nextLine();
+//         String s2=sc.nextLine();
+//         rotation cr=new rotation();
+//         System.out.println(cr.check_rotation(s1,s2));
+//     }
+// }
+
+
+
+// <!-- Check anagram of string -->
+
+// import java.util.Scanner;
+
+// class anagram{
+//     boolean check_anagram(String s1,String s2){
+        
+//     }
+// }
+
+// class Test{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         String s1=sc.nextLine();
+//         String s2=sc.nextLine();
+//         anagram ag=new anagram();
+//         System.out.println(ag.check_anagram(s1,s2));
+//     }
+// }
+
+
+
+// <!-- Bitwise operator -->
+// <!-- AND operator -->
+
+// import java.util.Scanner;
+
+// class Test{
+//     public static void main(String args[]){
+//         Scanner sc=new Scanner(System.in);
+//         int a=sc.nextInt();
+//         int b=sc.nextInt();
+//         System.out.println(a&b);
+//     }
+// }
+
+
+
+// <!-- OR operator -->
+
+// import java.util.Scanner;
+
+// class Test{
+//     public static void main(String args[]){
+//         Scanner sc=new Scanner(System.in);
+//         int a=sc.nextInt();
+//         int b=sc.nextInt();
+//         System.out.println(a|b);
+//     }
+// }
+
+
+
+// <!-- XOR operator -->
+
+// import java.util.Scanner;
+
+// class Test{
+//     public static void main(String args[]){
+//         Scanner sc=new Scanner(System.in);
+//         int a=sc.nextInt();
+//         int b=sc.nextInt();
+//         System.out.println(a^b);
+//     }
+// }
