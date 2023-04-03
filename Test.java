@@ -4973,3 +4973,171 @@
 //         System.out.println(a^b);
 //     }
 // }
+
+
+
+// <!-- NOT operator -->
+
+// import java.util.Scanner;
+
+// class Test{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         int x=sc.nextInt();
+//         System.out.println(~x+1);
+//     }
+// }
+
+
+
+// <!-- Left shift -->
+
+// import java.util.Scanner;
+
+// class Test{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         int x=sc.nextInt();
+//         int y=sc.nextInt();
+//         System.out.println(x<<y);
+//     }
+// }
+
+
+
+// <!-- Rigth shift -->
+
+// import java.util.Scanner;
+
+// class Test{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         int x=sc.nextInt();
+//         int y=sc.nextInt();
+//         System.out.println(x>>y);      
+//     }
+// }
+
+
+
+// <!-- Unsigned right shift -->
+
+// import java.util.Scanner;
+
+// class Test{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         int x=sc.nextInt();
+//         int y=sc.nextInt();
+//         System.out.println(x>>>y);
+//     }
+// }
+
+
+
+// <!-- check kth bit is set or not -->
+
+// import java.util.Scanner;
+// import java.lang.System;
+
+// class bit{
+//     void check_bit(int n,int k){
+//         int x=1<<(k-1);
+//         if((n&k)!=0){
+//             System.out.println("1");
+//             return;
+//         }
+//         System.out.println("0");
+//         return;
+//     }
+// }
+
+// class Test{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         int n=sc.nextInt();
+//         int k=sc.nextInt();
+//         bit b=new bit();
+//         b.check_bit(n,k);
+//     }
+// }
+
+
+
+// <!-- infix to prefix -->
+
+import java.util.Scanner;
+import java.util.Stack;
+
+class conversion{
+    int precedence(char ch){
+        switch(ch){
+            case '-':
+                return 1;
+            case '+':
+                return 1;
+            case '/':
+                return 2;
+            case '*':
+                return 2;
+            case '^':
+                return 3;
+        }
+        return -1;
+    }
+
+    String infix_to_prefix(String exp){
+        Stack<Character> st=new Stack<>();
+        String str="";
+        for(int i=exp.length()-1;i>=0;i--){
+            if(exp.charAt(i)>='A' && exp.charAt(i)<='Z' || exp.charAt(i)>='a' && exp.charAt(i)<='z' || exp.charAt(i)>='0' && exp.charAt(i)<='9'){
+                str=str+exp.charAt(i);
+            }
+            else if(exp.charAt(i)==')'){
+                st.push(exp.charAt(i));
+            }
+            else{
+                if(exp.charAt(i)=='('){
+                    while(st.isEmpty()==false && st.peek()!=')'){
+                        char temp=st.pop();
+                        str+=temp;
+                    }
+                    if(st.isEmpty()==false){
+                        st.pop();
+                    }
+                }
+                else{
+                    char temp=exp.charAt(i);
+                    int s=precedence(temp);
+                    while(st.isEmpty()==false){
+                        char temp2=st.peek();
+                        int k=precedence(temp2);
+                        if(s>k){
+                            break;
+                        }
+                        char temp3=st.pop();
+                        str+=temp3;
+                    }
+                    st.push(exp.charAt(i));
+                }
+            }
+        }
+        while(st.isEmpty()==false){
+            str+=st.pop();
+        }
+        String res="";
+        for(int i=str.length()-1;i>=0;i--){
+            res=res+str.charAt(i);
+        }
+        return res;
+    }
+}
+
+class Test{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        String str=sc.nextLine();
+        conversion cv=new conversion();
+        System.out.println(cv.infix_to_prefix(str));
+    }
+}
