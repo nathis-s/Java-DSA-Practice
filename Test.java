@@ -4437,7 +4437,7 @@
 
 
 
-// <!-- ArrauDeque -->
+// <!-- ArrayDeque -->
 
 // import java.util.Scanner;
 // import java.util.ArrayDeque;
@@ -4465,7 +4465,7 @@
 // import java.util.Scanner;
 // import java.util.Stack;
 
-// class previousgreater{
+// class prev                           iousgreater{
 //     void ispreviousgreater(int arr[],int n){
 //         Stack<Integer> s=new Stack<>();
 //         int res[]=new int[n];
@@ -5066,78 +5066,276 @@
 
 // <!-- infix to prefix -->
 
-import java.util.Scanner;
-import java.util.Stack;
+// import java.util.Scanner;
+// import java.util.Stack;
 
-class conversion{
-    int precedence(char ch){
-        switch(ch){
-            case '-':
-                return 1;
-            case '+':
-                return 1;
-            case '/':
-                return 2;
-            case '*':
-                return 2;
-            case '^':
-                return 3;
-        }
-        return -1;
-    }
+// class conversion{
+//     int precedence(char ch){
+//         switch(ch){
+//             case '-':
+//                 return 1;
+//             case '+':
+//                 return 1;
+//             case '/':
+//                 return 2;
+//             case '*':
+//                 return 2;
+//             case '^':
+//                 return 3;
+//         }
+//         return -1;
+//     }
 
-    String infix_to_prefix(String exp){
-        Stack<Character> st=new Stack<>();
-        String str="";
-        for(int i=exp.length()-1;i>=0;i--){
-            if(exp.charAt(i)>='A' && exp.charAt(i)<='Z' || exp.charAt(i)>='a' && exp.charAt(i)<='z' || exp.charAt(i)>='0' && exp.charAt(i)<='9'){
-                str=str+exp.charAt(i);
-            }
-            else if(exp.charAt(i)==')'){
-                st.push(exp.charAt(i));
-            }
-            else{
-                if(exp.charAt(i)=='('){
-                    while(st.isEmpty()==false && st.peek()!=')'){
-                        char temp=st.pop();
-                        str+=temp;
-                    }
-                    if(st.isEmpty()==false){
-                        st.pop();
-                    }
-                }
-                else{
-                    char temp=exp.charAt(i);
-                    int s=precedence(temp);
-                    while(st.isEmpty()==false){
-                        char temp2=st.peek();
-                        int k=precedence(temp2);
-                        if(s>k){
-                            break;
-                        }
-                        char temp3=st.pop();
-                        str+=temp3;
-                    }
-                    st.push(exp.charAt(i));
-                }
-            }
-        }
-        while(st.isEmpty()==false){
-            str+=st.pop();
-        }
-        String res="";
-        for(int i=str.length()-1;i>=0;i--){
-            res=res+str.charAt(i);
-        }
-        return res;
-    }
-}
+//     String infix_to_prefix(String exp){
+//         Stack<Character> st=new Stack<>();
+//         String str="";
+//         for(int i=exp.length()-1;i>=0;i--){
+//             if(exp.charAt(i)>='A' && exp.charAt(i)<='Z' || exp.charAt(i)>='a' && exp.charAt(i)<='z' || exp.charAt(i)>='0' && exp.charAt(i)<='9'){
+//                 str=str+exp.charAt(i);
+//             }
+//             else if(exp.charAt(i)==')'){
+//                 st.push(exp.charAt(i));
+//             }
+//             else{
+//                 if(exp.charAt(i)=='('){
+//                     while(st.isEmpty()==false && st.peek()!=')'){
+//                         char temp=st.pop();
+//                         str+=temp;
+//                     }
+//                     if(st.isEmpty()==false){
+//                         st.pop();
+//                     }
+//                 }
+//                 else{
+//                     char temp=exp.charAt(i);
+//                     int s=precedence(temp);
+//                     while(st.isEmpty()==false){
+//                         char temp2=st.peek();
+//                         int k=precedence(temp2);
+//                         if(s>k){
+//                             break;
+//                         }
+//                         char temp3=st.pop();
+//                         str+=temp3;
+//                     }
+//                     st.push(exp.charAt(i));
+//                 }
+//             }
+//         }
+//         while(st.isEmpty()==false){
+//             str+=st.pop();
+//         }
+//         String res="";
+//         for(int i=str.length()-1;i>=0;i--){
+//             res=res+str.charAt(i);
+//         }
+//         return res;
+//     }
+// }
 
-class Test{
-    public static void main(String[] args){
-        Scanner sc=new Scanner(System.in);
-        String str=sc.nextLine();
-        conversion cv=new conversion();
-        System.out.println(cv.infix_to_prefix(str));
-    }
-}
+// class Test{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         String str=sc.nextLine();
+//         conversion cv=new conversion();
+//         System.out.println(cv.infix_to_prefix(str));
+//     }
+// }
+
+
+
+// <!-- Queue -->
+// Queue is an interface, it uses commonly the ArrayDeque (or) LinkedList class
+
+// Eg:1 -- using arraydeque class
+
+// import java.util.Scanner;
+// import java.util.ArrayDeque;
+
+// class Test{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         ArrayDeque<Integer> qu=new ArrayDeque<>();
+//         qu.add(sc.nextInt());
+//         qu.add(sc.nextInt());
+//         qu.add(sc.nextInt());
+//         System.out.println(qu.peek());
+//         qu.add(sc.nextInt());
+//         System.out.println(qu);
+//         qu.remove();
+//         qu.remove();
+//         System.out.println(qu);
+//         qu.add(sc.nextInt());
+//         System.out.println(qu);
+//     }
+// }
+
+
+
+// Eg:2 -- using arraydeque
+
+// import java.util.Scanner;
+// import java.util.Queue;
+// import java.util.ArrayDeque;
+
+// class Test{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         Queue<Integer> qu=new ArrayDeque<>();
+//         qu.add(sc.nextInt());
+//         qu.add(sc.nextInt());
+//         qu.add(sc.nextInt());
+//         System.out.println(qu.peek());
+//         qu.add(sc.nextInt());
+//         System.out.println(qu);
+//         qu.remove();
+//         qu.remove();
+//         System.out.println(qu);
+//         qu.add(sc.nextInt());
+//         System.out.println(qu);
+//     }
+// }
+
+
+
+// Eg:3 -- implementing arrayadeque class using queue interface
+
+// import java.util.Scanner;
+// import java.util.Queue;
+// import java.util.ArrayDeque;
+
+// class Test{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         Queue<Integer> qu=new ArrayDeque<>();
+//         qu.offer(sc.nextInt());
+//         qu.offer(sc.nextInt());
+//         qu.offer(sc.nextInt());
+//         System.out.println(qu.peek());
+//         qu.offer(sc.nextInt());
+//         System.out.println(qu);
+//         qu.poll();
+//         qu.poll();
+//         System.out.println(qu);
+//         qu.offer(sc.nextInt());
+//         System.out.println(qu);
+//     }
+// }
+
+
+
+// Eg:4 -- using LinkedList
+
+// import java.util.Scanner;
+// import java.util.Queue;
+// import java.util.LinkedList;
+
+// class Test{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         Queue<Integer> qu=new LinkedList<>();
+//         qu.add(sc.nextInt());
+//         qu.add(sc.nextInt());
+//         qu.add(sc.nextInt());
+//         System.out.println(qu.peek());
+//         System.out.println(qu);
+//         qu.remove();
+//         System.out.println(qu);
+//         qu.remove();
+//         System.out.println(qu);
+//         qu.add(sc.nextInt());
+//         qu.add(sc.nextInt());
+//         System.out.println(qu);
+//     }
+// }
+
+
+
+// implementing queue interface using Priority queue class
+
+// import java.util.Scanner;
+// import java.util.Queue;
+// import java.util.PriorityQueue;
+
+// class Test{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         Queue<Integer> qu=new PriorityQueue<>();
+//         qu.add(sc.nextInt());
+//         qu.add(sc.nextInt());
+//         qu.add(sc.nextInt());
+//         System.out.println(qu.peek());
+//         System.out.println(qu);
+//         qu.remove();
+//         System.out.println(qu);
+//         qu.remove();
+//         System.out.println(qu);
+//         qu.add(sc.nextInt());
+//         qu.add(sc.nextInt());
+//         System.out.println(qu);
+//     }
+// }
+
+
+
+// implementing collection interface using arraydeque class
+
+// import java.util.Scanner;
+// import java.util.ArrayDeque;
+// import java.util.Collection;
+
+// class Test{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         Collection<Integer> cl=new ArrayDeque<>();
+//         cl.add(sc.nextInt());
+//         cl.add(sc.nextInt());
+//         cl.add(sc.nextInt());
+//         System.out.println(cl);
+//         System.out.println(cl);
+//         cl.remove(65);
+//         System.out.println(cl);
+//         cl.remove(54);
+//         System.out.println(cl);
+//         cl.add(sc.nextInt());
+//         cl.add(sc.nextInt());
+//         System.out.println(cl);
+//     }
+// }
+
+
+
+// Generate number with given digits using queue
+
+// import java.util.Scanner;
+// import java.util.Queue;
+// import java.util.ArrayDeque;
+
+// class digit{
+//     void digit_numbers(String var1,String var2,int n){
+//         Queue<String> qu=new ArrayDeque<>();
+//         qu.add(var1);
+//         qu.add(var2);
+//         int t=n;
+//         while(t!=0){
+//             qu.add(qu.peek()+var1);
+//             qu.add(qu.peek()+var2);
+//             System.out.println(qu.remove());
+//             t--;
+//         }
+//     }
+// }
+
+// class Test{ 
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         String var1=sc.nextLine();
+//         String var2=sc.nextLine();
+//         int n=sc.nextInt();
+//         digit dg=new digit();
+//         dg.digit_numbers(var1,var2,n);
+//     }
+// }
+
+
+
