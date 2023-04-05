@@ -5339,3 +5339,82 @@
 
 
 
+// Implementing Deque interface using ArrayDeque class
+
+// import java.util.Scanner;
+// import java.util.ArrayDeque;
+// import java.util.Deque;
+
+// class Test{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         Deque<Integer> dq=new ArrayDeque<>();
+//         dq.addFirst(sc.nextInt());
+//         dq.addFirst(sc.nextInt());
+//         System.out.println(dq.getFirst());
+//         dq.addLast(sc.nextInt());
+//         System.out.println(dq);
+//         dq.removeLast();
+//         System.out.println(dq);
+//         dq.removeFirst();
+//         System.out.println(dq.getLast());
+//         System.out.println(dq);
+//         dq.addLast(sc.nextInt());
+//         dq.addFirst(sc.nextInt());
+//         System.out.println(dq);
+//     }
+// }
+
+
+
+// Eg:2
+
+// import java.util.Scanner;
+// import java.util.ArrayDeque;
+// import java.util.Deque;
+
+// class Test{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         Deque<Integer> dq=new ArrayDeque<>();
+//         dq.offerFirst(sc.nextInt());
+//         dq.offerFirst(sc.nextInt());
+//         System.out.println(dq.peekFirst());
+//         dq.offerLast(sc.nextInt());
+//         System.out.println(dq);
+//         dq.pollLast();
+//         System.out.println(dq);
+//         dq.pollFirst();
+//         System.out.println(dq.peekLast());
+//         System.out.println(dq);
+//         dq.offerLast(sc.nextInt());
+//         dq.offerFirst(sc.nextInt());
+//         System.out.println(dq);
+//     }
+// }
+
+
+
+import java.util.Scanner;
+import java.util.LinkedList;
+import java.util.Deque;
+
+class Test{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        Deque<Integer> dq=new LinkedList<>();
+        dq.addFirst(sc.nextInt());
+        dq.addFirst(sc.nextInt());
+        System.out.println(dq.getFirst());
+        dq.addLast(sc.nextInt());
+        System.out.println(dq);
+        dq.removeLast();
+        System.out.println(dq);
+        dq.removeFirst();
+        System.out.println(dq.getLast());
+        System.out.println(dq);
+        dq.addLast(sc.nextInt());
+        dq.addFirst(sc.nextInt());
+        System.out.println(dq);
+    }
+}
