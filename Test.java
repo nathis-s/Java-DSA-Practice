@@ -5395,6 +5395,8 @@
 
 
 
+// Implementation of queue interface using LinkedList class
+
 import java.util.Scanner;
 import java.util.LinkedList;
 import java.util.Deque;
