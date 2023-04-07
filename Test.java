@@ -5305,6 +5305,31 @@
 
 
 
+// implementing priorityqueue class using priorityqueue class
+// if we print the priorityqueue, then it will print in random order
+// if we remove elements from priorityqueue, then it will remove in ascending order
+
+// import java.util.Scanner;
+// import java.util.PriorityQueue;
+
+// class Test{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         PriorityQueue<Integer> qu=new PriorityQueue<>();
+//         qu.add(sc.nextInt());
+//         qu.add(sc.nextInt());
+//         qu.add(sc.nextInt());
+//         qu.add(sc.nextInt());
+//         qu.add(sc.nextInt());
+//         System.out.println(qu);
+//         while(qu.size()!=0){
+//             System.out.print(qu.remove()+" ");
+//         }
+//     }
+// }
+
+
+
 // Generate number with given digits using queue
 
 // import java.util.Scanner;
@@ -5397,26 +5422,51 @@
 
 // Implementation of queue interface using LinkedList class
 
-import java.util.Scanner;
-import java.util.LinkedList;
-import java.util.Deque;
+// import java.util.Scanner;
+// import java.util.LinkedList;
+// import java.util.Deque;
 
-class Test{
-    public static void main(String[] args){
-        Scanner sc=new Scanner(System.in);
-        Deque<Integer> dq=new LinkedList<>();
-        dq.addFirst(sc.nextInt());
-        dq.addFirst(sc.nextInt());
-        System.out.println(dq.getFirst());
-        dq.addLast(sc.nextInt());
-        System.out.println(dq);
-        dq.removeLast();
-        System.out.println(dq);
-        dq.removeFirst();
-        System.out.println(dq.getLast());
-        System.out.println(dq);
-        dq.addLast(sc.nextInt());
-        dq.addFirst(sc.nextInt());
-        System.out.println(dq);
-    }
-}
+// class Test{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         Deque<Integer> dq=new LinkedList<>();
+//         dq.addFirst(sc.nextInt());
+//         dq.addFirst(sc.nextInt());
+//         System.out.println(dq.getFirst());
+//         dq.addLast(sc.nextInt());
+//         System.out.println(dq);
+//         dq.removeLast();
+//         System.out.println(dq);
+//         dq.removeFirst();
+//         System.out.println(dq.getLast());
+//         System.out.println(dq);
+//         dq.addLast(sc.nextInt());
+//         dq.addFirst(sc.nextInt());
+//         System.out.println(dq);
+//     }
+// }
+
+
+
+// <!-- Recursion -->
+
+// import java.util.Scanner;
+
+// class recursion{
+//     void is_recursion(int n){
+//         if(n==0){
+//             return;
+//         }
+//         is_recursion(n-1);
+//         System.out.println(n);
+//     }
+// }
+
+// class Test{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         int n=sc.nextInt();
+//         recursion rs=new recursion();
+//         rs.is_recursion(n);
+//     }
+// }
