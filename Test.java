@@ -5470,3 +5470,123 @@
 //         rs.is_recursion(n);
 //     }
 // }
+
+
+
+// import java.util.Scanner;
+
+// class recursion{
+//     int is_recursion(int n){
+//         if(n==1){
+//             return 0;
+//         }
+//         return 1+is_recursion(n/2);
+//     }
+// }
+
+// class Test{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         int n=sc.nextInt();
+//         recursion rs=new recursion();
+//         System.out.println(rs.is_recursion(n));
+//     }
+// }
+
+
+
+// import java.util.Scanner;
+
+// class recursion{
+//     void is_recursion(int n){
+//         if(n==0){
+//             return;
+//         }
+//         is_recursion(n/2);
+//         System.out.println(n%2);
+//     }
+// }
+
+// class Test{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         int n=sc.nextInt();
+//         recursion rs=new recursion();
+//         rs.is_recursion(n);
+//     }
+// }
+
+
+
+// import java.util.Scanner;
+
+// class recursion{
+//     void is_recursion(int n){
+//         if(n==0){
+//             return;
+//         }
+//         System.out.print(n+" ");
+//         is_recursion(n-1);
+//         return;
+//     }
+// }
+
+// class Test{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         int n=sc.nextInt();
+//         recursion rs=new recursion();
+//         rs.is_recursion(n);
+//     }
+// }
+
+
+
+// Fibonacci series:
+
+// import java.util.Scanner;
+
+// class recursion{
+//     int is_recursion(int n){
+//         if(n<=1){
+//             return n;
+//         }
+//         return is_recursion(n-1)+is_recursion(n-2);
+//     }
+// }
+
+// class Test{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         int n=sc.nextInt();
+//         recursion rs=new recursion();
+//         System.out.println(rs.is_recursion(n));
+//     }
+// }
+
+
+
+// Sum of n natural numbers:
+
+// import java.util.Scanner;
+
+// class recursion{
+//     int is_recursion(int n){
+//         if(n==0){
+//             return 0;
+//         }
+//         return n+is_recursion(n-1);
+//     }
+// }
+
+// class Test{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         int n=sc.nextInt();
+//         recursion rs=new recursion();
+//         System.out.println(rs.is_recursion(n));
+//     }
+// }
+
+
+
