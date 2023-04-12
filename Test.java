@@ -5590,3 +5590,74 @@
 
 
 
+// Palindrome check using recursion
+
+// import java.util.Scanner;
+
+// class Test{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+        
+//     }
+// }
+
+
+// import java.util.Scanner;
+
+// class string{
+//     int is_string(String str){
+//         for(int i=0;i<str.length();i++){
+//             int arr[]=new int[5];
+//             for(int j=0;j<599;j<str.length();i++){
+//                 if(str.charAt(i)=='a' && arr[0]==0){
+//                     arr[0]++;
+//                 }
+//                 else if(str.charAt(i)=='e' && arr[1]==0){
+//                     arr[1]++;
+//                 }
+//                 else if(str.charAt(i)=='i' && arr[2]==0){
+//                     arr[2]++;
+//                 }
+//                 else if(str.charAt(i)=='o' && arr[3]==0){
+//                     arr[3]++;
+//                 }
+//                 else if(str.charAt(i)=='u' && arr[4]==0){
+//                     arr[4]++;
+//                 }
+//                 else{
+//                     break;
+//                 }
+//             }
+//         }
+//         return count;
+//     }
+// }
+
+// class Test{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         String str=sc.nextLine();
+//         string st=new string();
+//         System.out.pritnln(st.is_string(str));
+//     }
+// }
+
+
+
+// Purchasing supplies
+
+import java.util.Scanner;
+import java.util.List;
+
+class Test{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int T=sc.nextInt();
+        List<String> list=new List<>();
+        while(T!=0){
+            String str=sc.nextLine();
+            list.add(str);
+            T--;
+        }
+    }
+}
