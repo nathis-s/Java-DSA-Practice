@@ -5602,13 +5602,55 @@
 // }
 
 
+
+// Find next distinct year
+
+// import java.util.Scanner;
+
+// class year{
+//     void is_distinct(int n){
+//         while(n<10000){
+//             n++;
+//             int arr[]=new int[10];
+//             int num=n;
+//             int flag=0;
+//             while(num!=0){
+//                 int rem=num%10;
+//                 if(arr[rem]==0){
+//                     arr[rem]++;
+//                 }
+//                 else{
+//                     flag=1;
+//                     break;
+//                 }
+//                 num/=10;
+//             }
+//             if(flag==0){
+//                 System.out.println(n);
+//                 break;
+//             }
+//         }
+//     }
+// }
+
+// class Test{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         int n=sc.nextInt();
+//         year y=new year();
+//         y.is_distinct(n);
+//     }
+// }
+
+
+
 // import java.util.Scanner;
 
 // class string{
 //     int is_string(String str){
 //         for(int i=0;i<str.length();i++){
 //             int arr[]=new int[5];
-//             for(int j=0;j<599;j<str.length();i++){
+//             for(int j=0;j<5 && j<str.length();j++){
 //                 if(str.charAt(i)=='a' && arr[0]==0){
 //                     arr[0]++;
 //                 }
@@ -5646,18 +5688,231 @@
 
 // Purchasing supplies
 
-import java.util.Scanner;
-import java.util.List;
+// import java.io.BufferedReader;
+// import java.io.InputStreamReader;
+// import java.io.IOException;
+// import java.util.ArrayList;
+// import java.util.List;
 
-class Test{
-    public static void main(String[] args){
-        Scanner sc=new Scanner(System.in);
-        int T=sc.nextInt();
-        List<String> list=new List<>();
-        while(T!=0){
-            String str=sc.nextLine();
-            list.add(str);
-            T--;
-        }
-    }
-}
+// class container{
+//     void return_container(List<String> list){
+//         for(int i=0;i<list.size();i++){
+//             String[] arr=list.get(i).split(" ",3);
+//             int bud=Integer.parseInt(arr[0]);
+//             int cost=Integer.parseInt(arr[1]);
+//             int ret=Integer.parseInt(arr[2]);
+//             int buy=bud/cost;
+//             int rem=buy%ret;
+//             int div=buy/ret;
+//             if(div==0){
+//                 System.out.println(buy);
+//             }
+//             else{
+//                 if(rem!=0){
+//                     System.out.println(buy+div+1);
+//                 }
+//                 else{
+//                     System.out.println(buy+div);
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// class Test{
+//     public static void main(String[] args) throws IOException{
+//         BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+//         int T=Integer.parseInt(br.readLine());
+//         List<String> list=new ArrayList<>();
+//         while(T!=0){
+//             list.add(br.readLine());
+//             T--;
+//         }
+//         container ct=new container();
+//         ct.return_container(list);
+//     }
+// }
+
+
+
+// import java.util.Arrays;
+// import java.util.Scanner;
+
+// class sort{
+//     void sort_prime(int arr[]){
+//         Arrays.sort(arr);
+//         int res[]=new int[arr.length];
+//         int k=0;
+//         for(int i=arr.length-1;i>=0;i--){
+//             int flag=0;
+//             if(arr[i]==2){
+//                 flag=0;
+//             }
+//             else{
+//                 for(int j=2;j*j<arr[i];j++){
+//                     if(arr[i]%j==0){
+//                         flag=1;
+//                         break;
+//                     }
+//                 }
+//             }
+//             if(flag==0){
+//                 res[k++]=arr[i];
+//             }
+//         }
+//         int mid=k;
+//         for(int i=0;i<arr.length;i++){
+//             int flag=0;
+//             if(arr[i]==2){
+//                 flag=0;
+//             }
+//             else{
+//                 for(int j=2;j*j<arr[i];j++){
+//                     if(arr[i]%j==0){
+//                         flag=1;
+//                         break;
+//                     }
+//                 }
+//             }
+//             if(flag==1){
+//                 res[k++]=arr[i];
+//             }
+//         }
+        
+//         for(int l=0;l<res.length;l++){
+//             System.out.print(res[l]+" ");
+//         }
+//     }
+// }
+
+// class Test{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         int n=sc.nextInt();
+//         int arr[]=new int[n];
+//         for(int i=0;i<n;i++){
+//             arr[i]=sc.nextInt();
+//         }
+//         sort st=new sort();
+//         st.sort_prime(arr);
+//     }
+// }
+
+
+
+// Extract integer and store in seperate variable from string
+
+// import java.util.Scanner;
+
+// class Test{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         String str=sc.nextLine();
+//         String arr[]=str.split(" ",3);
+//         int bud=Integer.parseInt(arr[0]);
+//         int cost=Integer.parseInt(arr[1]);
+//         int ret=Integer.parseInt(arr[2]);
+//         System.out.println(bud+" "+cost+" "+ret);
+//     }
+// }
+
+
+
+// Multidimentional array:
+
+// import java.util.Scanner;
+
+// class Array{
+//     void multi_array(int arr[][]){
+//         for(int i=0;i<arr.length;i++){
+//             for(int j=0;j<arr[i].length;j++){
+//                 System.out.print(arr[i][j]+" ");
+//             }
+//         }
+//     }
+// }
+
+// class Test{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         int m=sc.nextInt();
+//         int n=sc.nextInt();
+//         int arr[][]=new int[m][n];
+//         for(int i=0;i<m;i++){
+//             for(int j=0;j<n;j++){
+//                 arr[i][j]=sc.nextInt();
+//             }
+//         }
+//         Array ay=new Array();
+//         ay.multi_array(arr);
+//     }
+// }
+
+
+
+// Apply same values for row in multidimensional array:
+
+// import java.util.Scanner;
+
+// class Array{
+//     void multi_array(int arr[][]){
+//         for(int i=0;i<arr.length;i++){
+//             for(int j=0;j<arr[i].length;j++){
+//                 System.out.print(arr[i][j]+" ");
+//             }
+//             System.out.println();
+//         }
+//     }
+// }
+
+// class Test{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         int m=sc.nextInt();
+//         int n=sc.nextInt();
+//         int arr[][]=new int[m][n];
+//         for(int i=0;i<m;i++){
+//             for(int j=0;j<n;j++){
+//                 arr[i][j]=i;
+//             }
+//         }
+//         Array ay=new Array();
+//         ay.multi_array(arr);
+//     }
+// }
+
+
+
+// Jagged array of user specified size:
+
+// import java.util.Scanner;
+
+// class Array{
+//     void multi_array(int arr[][]){
+//         for(int i=0;i<arr.length;i++){
+//             for(int j=0;j<arr[i].length;j++){
+//                 System.out.print(arr[i][j]+" ");
+//             }
+//             System.out.println();
+//         }
+//     }
+// }
+
+// class Test{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         int m=sc.nextInt();
+//         int arr[][]=new int[m][];
+//         for(int i=0;i<m;i++){
+//             arr[i]=new int[i+1];
+//             for(int j=0;j<arr[i].length;j++){
+//                 arr[i][j]=i;
+//             }
+//         }
+//         Array ay=new Array();
+//         ay.multi_array(arr);
+//     }
+// }
+
+
+
