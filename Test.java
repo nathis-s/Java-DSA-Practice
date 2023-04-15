@@ -5916,3 +5916,95 @@
 
 
 
+// Print Matrix in snake Pattern:
+
+// import java.util.Scanner;
+
+// class Array{
+//     void multi_array(int matrix[][]){
+//         for(int i=0;i<matrix.length;i++){
+//             if(i%2==0){
+//                 for(int j=0;j<matrix[i].length;j++){
+//                     System.out.print(matrix[i][j]+" ");
+//                 }
+//                 System.out.println();
+//             }
+//             else{
+//                 for(int j=matrix[i].length-1;j>=0;j--){
+//                     System.out.print(matrix[i][j]+" ");
+//                 }
+//                 System.out.println();
+//             }
+//         }
+//     }
+// }
+
+// class Test{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         int m=sc.nextInt();
+//         int n=sc.nextInt();
+//         int arr[][]=new int[m][n];
+//         for(int i=0;i<m;i++){
+//             for(int j=0;j<n;j++){
+//                 arr[i][j]=sc.nextInt();
+//             }
+//         }
+//         Array ay=new Array();
+//         ay.multi_array(arr);
+//     }
+// }
+
+
+
+// Boundary traversal of a matrix:
+
+// import java.util.Scanner;
+
+// class Array{
+//     void multi_array(int arr[][],int m,int n){
+//         if(m==1){
+//             for(int j=0;j<arr[0].length;j++){
+//                 System.out.print(arr[0][j]+" ");
+//             } 
+//         }
+//         else if(n==1){
+//             for(int i=0;i<arr.length;i++){
+//                 System.out.print(arr[i][0]+" ");
+//             }
+//         }
+//         else{
+//             for(int j=0;j<n;j++){
+//                 System.out.print(arr[0][j]+" ");
+//             }
+//             System.out.println();
+//             for(int i=1;i<m;i++){
+//                 System.out.print(arr[i][n-1]+" ");
+//             }
+//             System.out.println();
+//             for(int j=n-2;j>=0;j--){
+//                 System.out.print(arr[m-1][j]+" ");
+//             }
+//             System.out.println();
+//             for(int i=m-2;i>=1;i--){
+//                 System.out.print(arr[i][0]+" ");
+//             }
+//         }
+//     }
+// }
+
+// class Test{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         int m=sc.nextInt();
+//         int n=sc.nextInt();
+//         int arr[][]=new int[m][n];
+//         for(int i=0;i<m;i++){
+//             for(int j=0;j<n;j++){
+//                 arr[i][j]=sc.nextInt();
+//             }
+//         }
+//         Array ay=new Array();
+//         ay.multi_array(arr,m,n);
+//     }
+// }
