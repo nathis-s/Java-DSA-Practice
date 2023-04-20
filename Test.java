@@ -5959,52 +5959,232 @@
 
 // Boundary traversal of a matrix:
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
-class Array{
-    void multi_array(int arr[][],int m,int n){
-        if(m==1){
-            for(int j=0;j<arr[0].length;j++){
-                System.out.print(arr[0][j]+" ");
-            } 
-        }
-        else if(n==1){
-            for(int i=0;i<arr.length;i++){
-                System.out.print(arr[i][0]+" ");
-            }
-        }
-        else{
-            for(int j=0;j<n;j++){
-                System.out.print(arr[0][j]+" ");
-            }
-            System.out.println();
-            for(int i=1;i<m;i++){
-                System.out.print(arr[i][n-1]+" ");
-            }
-            System.out.println();
-            for(int j=n-2;j>=0;j--){
-                System.out.print(arr[m-1][j]+" ");
-            }
-            System.out.println();
-            for(int i=m-2;i>=1;i--){
-                System.out.print(arr[i][0]+" ");
-            }
-        }
-    }
-}
+// class Array{
+//     void multi_array(int arr[][],int m,int n){
+//         if(m==1){
+//             for(int j=0;j<arr[0].length;j++){
+//                 System.out.print(arr[0][j]+" ");
+//             } 
+//         }
+//         else if(n==1){
+//             for(int i=0;i<arr.length;i++){
+//                 System.out.print(arr[i][0]+" ");
+//             }
+//         }
+//         else{
+//             for(int j=0;j<n;j++){
+//                 System.out.print(arr[0][j]+" ");
+//             }
+//             System.out.println();
+//             for(int i=1;i<m;i++){
+//                 System.out.print(arr[i][n-1]+" ");
+//             }
+//             System.out.println();
+//             for(int j=n-2;j>=0;j--){
+//                 System.out.print(arr[m-1][j]+" ");
+//             }
+//             System.out.println();
+//             for(int i=m-2;i>=1;i--){
+//                 System.out.print(arr[i][0]+" ");
+//             }
+//         }
+//     }
+// }
 
-class Test{
-    public static void main(String[] args){
-        Scanner sc=new Scanner(System.in);
-        int m=sc.nextInt();
-        int n=sc.nextInt();
-        int arr[][]=new int[m][n];
-        for(int i=0;i<m;i++){
-            for(int j=0;j<n;j++){
-                arr[i][j]=sc.nextInt();
-            }
-        }
-        Array ay=new Array();
-        ay.multi_array(arr,m,n);
-    }
-}
+// class Test{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         int m=sc.nextInt();
+//         int n=sc.nextInt();
+//         int arr[][]=new int[m][n];
+//         for(int i=0;i<m;i++){
+//             for(int j=0;j<n;j++){
+//                 arr[i][j]=sc.nextInt();
+//             }
+//         }
+//         Array ay=new Array();
+//         ay.multi_array(arr,m,n);
+//     }
+// }
+
+
+
+// Print the count of every character and count doesn't greater than 9:
+
+// import java.util.Scanner;
+
+// class string_class{
+//     void count_string(String str){
+//         int arr[]=new  int[256];
+//         int end=str.length()-1;
+//         String res="";
+//         for(int i=0;i<str.length();i++){
+//             arr[str.charAt(i)]++;
+//             if(i!=end && str.charAt(i)!=str.charAt(i+1)){
+//                 int count=arr[str.charAt(i)];
+//                 while(count>9){
+//                     res=res+9+str.charAt(i);
+//                     count-=9;
+//                 }
+//                 res=res+count+str.charAt(i);
+//                 arr[str.charAt(i)]=0;
+//             }
+//             else if(i==end){
+//                 int count=arr[str.charAt(i)];
+//                 while(count>9){
+//                     res=res+9+str.charAt(i);
+//                     count-=9;
+//                 }
+//                 res=res+count+str.charAt(i);
+//                 arr[str.charAt(i)]=0;
+//             }
+//         }
+//         System.out.println(res);
+//     }
+// }
+
+// class Test{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         String str=sc.nextLine();
+//         string_class stc=new string_class();
+//         stc.count_string(str);
+//     }
+// }
+
+
+
+//Check 2nd string is available on 1st string:
+
+// import java.util.Scanner;
+
+// class string_check{
+//     boolean is_same_string(String str1,String str2){
+//         int arr[]=new int[256];
+//         for(int i=0;i<str1.length();i++){
+//             arr[str1.charAt(i)]++;
+//         }
+//         int flag=0;
+//         for(int i=0;i<str2.length();i++){
+//             if(arr[str2.charAt(i)]!=0){
+//                 // System.out.println(str2.charAt(i));
+//                 arr[str2.charAt(i)]--;
+//             }
+//             else{
+//                 flag=1;
+//                 break;
+//             }
+//         }
+//         if(flag==1){
+//             return false;
+//         }
+//         return true;
+//     }
+// }
+
+// class Test{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         String str1=sc.nextLine();
+//         String str2=sc.nextLine();
+//         string_check stc=new string_check();
+//         System.out.println(stc.is_same_string(str1,str2));
+//     }
+// }
+
+
+
+// import java.util.Scanner;
+// import java.util.Arrays;
+// import java.util.ArrayList;
+
+// class Test{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         ArrayList<ArrayList<Integer>> al=new ArrayList<ArrayList<Integer>>();
+//         al.add(new ArrayList<Integer>(Arrays.asList(3, 84)));
+//         System.out.println(al);
+//     }
+// }
+
+
+
+// kth non-repeating character
+
+// import java.util.Scanner;
+// import java.util.ArrayDeque;
+
+// class string_class{
+//     void non_repeating(String str,int k){
+//         ArrayDeque<Character> ad=new ArrayDeque<>();
+//         for(int i=0;i<str.length();i++){
+//             if(ad.contains(str.charAt(i))==true){
+//                 ad.remove(str.charAt(i));
+//             }
+//             else{
+//                 ad.addLast(str.charAt(i));
+//             }
+//         }
+//         char res=' ';
+//         if(k<=ad.size()){
+//             while(k!=0){
+//                 res=ad.removeFirst();
+//                 k--;
+//             }
+//             System.out.println(res);
+//         }
+//         else{
+//             System.out.println("-1");
+//         }
+//     }
+// }
+
+// class Test{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         String str=sc.nextLine();
+//         int k=sc.nextInt();
+//         string_class stc=new string_class();
+//         stc.non_repeating(str,k);
+//     }
+// }
+
+
+
+// print index of 1st and last elements whose sum equal to zero:
+
+// import java.util.Scanner;
+
+// class array_class{
+//     void index_substring(int arr[],int n){
+//         int flag=0;
+//         for(int i=0;i<n-1;i++){
+//             int sum=0;
+//             for(int j=i;j<n;j++){
+//                 sum=sum+arr[j];
+//                 if(sum==0){
+//                     flag=1;
+//                     System.out.println(i+" "+j);
+//                 }
+//             }
+//         }  
+//         if(flag==0){
+//             System.out.println("-1");
+//         }
+//     }
+// }
+
+// class Test{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         int n=sc.nextInt();
+//         int arr[]=new int[n];
+//         for(int i=0;i<n;i++){
+//             arr[i]=sc.nextInt();
+//         }
+//         array_class ac=new array_class();
+//         ac.index_substring(arr,n);
+//     }
+// }
