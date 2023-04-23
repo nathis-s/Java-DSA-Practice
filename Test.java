@@ -4379,7 +4379,7 @@
 //             int min=arr[i];
 //             for(int j=i+1;j<n;j++){
 //                 if(arr[j]<min){
-//                     min=arr[j];
+//                     min=arr[j];  
 //                     index=j;
 //                 }
 //             }
