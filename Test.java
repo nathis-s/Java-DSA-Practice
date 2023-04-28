@@ -2,7 +2,7 @@
 
 // public class Test{
 //     public static void main(String args[]){
-//         System.out.println("Hello World");  
+//         System.out.println("Hello World");
 //     }
 // }
 
@@ -83,10 +83,10 @@
 //         Integer x1=300,x2=300;
 //         int y1=200,y2=200;
 //         System.out.println(x1+" "+x2);
-//         System.out.println(y1+" "+y2);    
+//         System.out.println(y1+" "+y2);
 //         if(x1==x2){
 //             System.out.println("x1 and x2 are same");
-//         }   
+//         }
 //         else{
 //             System.out.println("x1 and x2 are not same");
 //         }
@@ -143,7 +143,7 @@
 //         String name = br.readLine();
 //         System.out.println("Enter your age : ");
 //         int age = Integer.parseInt(br.readLine());
-//         System.out.println("\nName : "+name+"\nAge : "+age);    
+//         System.out.println("\nName : "+name+"\nAge : "+age);
 //     }
 // }
 
@@ -277,10 +277,10 @@
 
 // class Test{
 //     public static void main(String args[]){
-//         int x=6,y=9;    
+//         int x=6,y=9;
 //         System.out.println("Bitwise AND value : "+(x&y));
 //         System.out.println("Bitwise OR value : "+(x|y));
-//         System.out.println("Bitwise XOR value : "+(x^y));       
+//         System.out.println("Bitwise XOR value : "+(x^y));
 //     }
 // }
 
@@ -384,7 +384,7 @@
 //         else{
 //             System.out.println("Given number is Zero");
 //         }
-//     }   
+//     }
 // }
 
 
@@ -437,10 +437,10 @@
 //             System.out.println("Largest of 3 numbers is : "+x);
 //         }
 //         else if(y>x && y>z){
-//             System.out.println("Largest of 3 numbers is : "+y);  
+//             System.out.println("Largest of 3 numbers is : "+y);
 //         }
 //         else{
-//             System.out.println("Largest of 3 numbers is : "+z);          
+//             System.out.println("Largest of 3 numbers is : "+z);
 //         }
 //     }
 // }
@@ -480,7 +480,7 @@
 //     	Scanner sc = new Scanner(System.in);
 //         System.out.print("Enter 1st number : ");
 //         int num1 = sc.nextInt();
-//         System.out.print("Enter 2nd number : ");     
+//         System.out.print("Enter 2nd number : ");
 //         int num2 = sc.nextInt();
 //         System.out.print("Enter an operation : ");
 //         String opn = sc.next();
@@ -532,7 +532,7 @@
 //         while(x<10){
 //             System.out.format("x value is %d\n",x);
 //             x++;
-//         }		
+//         }
 //     }
 // }
 
@@ -546,8 +546,8 @@
 //         do{
 //             System.out.println(x);
 //             x++;
-//         } 	
-//         while(x<10);    
+//         }
+//         while(x<10);
 //     }
 // }
 
@@ -582,7 +582,7 @@
 //             }
 //             System.out.println("Value of x is : "+x);
 //             x++;
-//         }	
+//         }
 //     }
 // }
 
@@ -807,7 +807,7 @@
 //             if(i%n1==0 && i%n2==0){
 //                 lcm = i;
 //                 break;
-//             }            
+//             }
 //             i++;
 //         }
 //         System.out.println("LCM of 2 numbers is : "+lcm);
@@ -941,10 +941,10 @@
 //         int z = d4.demo5(x,y);
 //         System.out.println(z);
 
-//         int c =  d4.demo6();   
-//         System.out.println(c);    
+//         int c =  d4.demo6();
+//         System.out.println(c);
 
-        
+
 //     }
 
 //     public static void fun1(){
@@ -971,7 +971,7 @@
 //         demo1 d1 = new demo1();
 //         int x = 10;
 //         int y = 20;
-//         int sum = d1.sum(x,y); 
+//         int sum = d1.sum(x,y);
 //         System.out.println(sum);
 //     }
 // }
@@ -1051,7 +1051,7 @@
 // class Test{
 //     public static void main(String args[]){
 //     	Scanner sc = new Scanner(System.in);
-//         System.out.print("Enter a number : ");  
+//         System.out.print("Enter a number : ");
 //         int n = sc.nextInt();
 //         int arr[] = new int[n];
 //         System.out.print("Enter an array : ");
@@ -1059,7 +1059,7 @@
 //             arr[i] = sc.nextInt();
 //         }
 //         for(int j=0;j<arr.length;j++){
-//             System.out.print(arr[j]+" ");   
+//             System.out.print(arr[j]+" ");
 //         }
 //     }
 // }
@@ -1076,7 +1076,7 @@
 //     	Scanner sc = new Scanner(System.in);
 //         System.out.print("Enter a number of rows : ");
 //         int m = sc.nextInt();
-//         System.out.print("Enter a number of columns : ");    
+//         System.out.print("Enter a number of columns : ");
 //         int n = sc.nextInt();
 //         int arr[][] = new int[m][n];
 //         System.out.print("Enter an 2d array : ");
@@ -1105,7 +1105,7 @@
 //     public static void main(String args[]){
 //     	Scanner sc = new Scanner(System.in);
 //         System.out.print("Enter a number : ");
-//         int n = sc.nextInt();    
+//         int n = sc.nextInt();
 //         int arr[] = new int[n];
 //         System.out.println("Enter an array elements : ");
 //         for(int i=0;i<n;i++){
@@ -1147,7 +1147,7 @@
 //             }
 //             if(flag==1){
 //                 count++;
-//             } 
+//             }
 //         }
 //         return count;
 //     }
@@ -1164,17 +1164,17 @@
 //         for(int i=0;i<n;i++){
 //             arr[i] = sc.nextInt();
 //         }
-       
+
 //         // Creating object and calling the distinctelement class\
 //         DistinctElement de = new DistinctElement();
 //         int count = de.distinct(arr,n);
-//         System.out.print("Total distinct elements are : "+  count);  
+//         System.out.print("Total distinct elements are : "+  count);
 //     }
 // }
 
 
 
-// Find average   
+// Find average
 
 // import java.util.Scanner;
 
@@ -1196,7 +1196,7 @@
 // }
 
 
- 
+
 //  Strings:
 
 // Eg:1
@@ -1227,7 +1227,7 @@
 //             System.out.println("Str1 & Str2 are false");
 //         }
 //     }
-// } 
+// }
 // we can't compare mutable and immutable string types
 
 
@@ -1248,11 +1248,11 @@
 
 //         //creating a string buffer object
 //         StringBuffer sb = new StringBuffer();
-//         //getting string buffer input 
+//         //getting string buffer input
 //         String str3 = sc.next();
 //         System.out.println("\n"+str3);
 //     }
-// } 
+// }
 
 
 
@@ -1318,13 +1318,13 @@
 //         String str7 = "gor";
 
 //         System.out.println(str1.contains(str2));
-//         System.out.println(str1.contains(str3));     
+//         System.out.println(str1.contains(str3));
 
 //         System.out.println(str1.compareTo(str2));
 //         System.out.println(str1.compareTo(str4));
-//         System.out.println(str1.compareTo(str5));       
+//         System.out.println(str1.compareTo(str5));
 
-//         System.out.println(str1.indexOf(str6));  
+//         System.out.println(str1.indexOf(str6));
 //         System.out.println(str1.indexOf(str7));
 //         System.out.println(str1.indexOf(str2));
 //         System.out.println(str1.indexOf(str2,1));
@@ -1341,7 +1341,7 @@
 // 1.equals ignore case:
 // 2.uppercase:
 
-// import java.util.Scanner; 
+// import java.util.Scanner;
 
 // class Test{
 //     public static void main(String args[]){
@@ -1369,9 +1369,9 @@
 //         Scanner sc = new Scanner(System.in);
 //         System.out.print("Enter string1 input : ");
 //         String str1 = sc.next();
-//         System.out.println("String1 : "+str1);	
+//         System.out.println("String1 : "+str1);
 //         String str2 = str1;
-//         System.out.println("String2 : "+str2);	
+//         System.out.println("String2 : "+str2);
 //         System.out.print("Enter a string to concat with string1 : ");
 //         str1 = str1.concat(sc.next());
 //         System.out.println("String1 after making changes : "+str1);
@@ -1390,7 +1390,7 @@
 // class Test{
 //     public static void main(String args[]){
 //         Scanner sc = new Scanner(System.in);
-//         System.out.print("Enter string1 input : ");		
+//         System.out.print("Enter string1 input : ");
 //         StringBuffer str1 = new StringBuffer(sc.next());
 //         StringBuffer str2 = str1;
 //         System.out.println("String1 : "+str1);
@@ -1424,7 +1424,7 @@
 //                visited[k-'A'] = true;
 //            }
 //        }
-//        for(int i=0;i<26;i++){	
+//        for(int i=0;i<26;i++){
 //            if(visited[i] == false){
 //                return false;
 //            }
@@ -1438,7 +1438,7 @@
 //        Scanner sc = new Scanner(System.in);
 //        isPanagram pg = new isPanagram();
 //        String str = sc.nextLine();
-//        System.out.println(pg.panagram(str));		
+//        System.out.println(pg.panagram(str));
 //    }
 //}
 
@@ -1450,7 +1450,7 @@
 //import java.util.Arrays;
 //
 //class Extra_char
-//{ 
+//{
 //	char isExtra_char(String str1,String str2){
 //		char arr1[] = str1.toCharArray();
 //		Arrays.sort(arr1);
@@ -1459,7 +1459,7 @@
 // 		int n = str1.length();
 // 		for(int i=0;i<n;i++){
 // 			if(arr1[i]!=arr2[i]){
-// 				return arr2[i]; 
+// 				return arr2[i];
 // 			}
 // 		}
 // 		return arr2[n];
@@ -1487,7 +1487,7 @@
 //class Anagram
 //{
 //	boolean isanagram(String str1,String str2){
-//		if(str1.length() == str2.length()){	  
+//		if(str1.length() == str2.length()){
 //			char arr1[] = str1.toCharArray();
 //			char arr2[] = str2.toCharArray();
 //			Arrays.sort(arr1);
@@ -1553,7 +1553,7 @@
 //		Anagram ag = new Anagram();
 //		System.out.println(ag.isAnagram(str1,str2));
 //	}
-//}	
+//}
 
 
 
@@ -1580,7 +1580,7 @@
 //					end--;
 //				}
 //			}
-//			return true;		
+//			return true;
 //		}
 //	}
 //}
@@ -1592,7 +1592,7 @@
 //		Palindrome pd = new Palindrome();
 //		System.out.println(pd.isPalindrome(str1));
 //	}
-//}	
+//}
 
 
 
@@ -1679,7 +1679,7 @@
 
 // class Test{
 // 	public static void main(String[] args){
-// 		Scanner sc = new Scanner(System.in);		
+// 		Scanner sc = new Scanner(System.in);
 // 		Maths mt = new Maths();
 // 		mt.default_const();
 // 	}
@@ -1695,7 +1695,7 @@
 
 // class Maths{
 // 	int add1=24,add2=34;
-	
+
 // 	void addition1(){
 // 		System.out.println(add1+add2);
 // 	}
@@ -1708,7 +1708,7 @@
 
 // 	void addition3(){
 // 		System.out.println(add1+add2);
-// 	}	
+// 	}
 // }
 
 // class Test{
@@ -1767,7 +1767,7 @@
 //class Test{
 //	public static void main(String[] args){
 //		Scanner sc = new Scanner(System.in);
-//		
+//
 //	}
 //}
 
@@ -1777,7 +1777,7 @@
 //
 //class Solution
 //{
-//    void subarraySum(int[] arr, int n, int s) 
+//    void subarraySum(int[] arr, int n, int s)
 //    {
 //        for(int i=0;i<n-1;i++){
 //			int sum = arr[i];
@@ -1814,7 +1814,7 @@
 //Eg:1
 
 //import java.util.Scanner;
-//import java.util.ArrayList;	
+//import java.util.ArrayList;
 //
 //class Test{
 //	public static void main(String[] args){
@@ -1833,7 +1833,7 @@
 //		System.out.println(al);
 //		System.out.println(al.get(4));
 //		System.out.println(al.indexOf(44));
-//		System.out.println(al.lastIndexOf(44));	
+//		System.out.println(al.lastIndexOf(44));
 //		System.out.println(al.isEmpty());
 //	}
 //}
@@ -1841,7 +1841,7 @@
 //Eg:2
 
 //import java.util.Scanner;
-//import java.util.ArrayList;	
+//import java.util.ArrayList;
 //
 //class Test{
 //	public static void main(String[] args){
@@ -1870,7 +1870,7 @@
 //
 //class reverseString{
 //	String reverse(StringBuffer str){
-//		int 
+//		int
 //	}
 //}
 //
@@ -1913,7 +1913,7 @@
 //			al.add(sc.nextInt());
 //		}
 //		smallerelements se = new smallerelements();
-//		
+//
 //	}
 //}
 
@@ -2009,7 +2009,7 @@
 //		System.out.println(hs.size());
 //		System.out.println(hs.isEmpty());
 // 	}
-//}	
+//}
 
 
 
@@ -2188,7 +2188,7 @@
 //      	int b_n=sc.nextInt();
 // 		int a[]=new int[a_n];
 //         int b[]=new int[b_n];
-//         System.out.println("Enter the 1st array : ");   
+//         System.out.println("Enter the 1st array : ");
 // 		for(int i=0;i<a_n;i++){
 // 			a[i]=sc.nextInt();
 // 		}
@@ -2236,7 +2236,7 @@
 //      	int b_n=sc.nextInt();
 // 		int a[]=new int[a_n];
 //         int b[]=new int[b_n];
-//         System.out.println("Enter the 1st array : ");   
+//         System.out.println("Enter the 1st array : ");
 // 		for(int i=0;i<a_n;i++){
 // 			a[i]=sc.nextInt();
 // 		}
@@ -2272,7 +2272,7 @@
 //      	int b_n=sc.nextInt();
 // 		int a[]=new int[a_n];
 //         int b[]=new int[b_n];
-//         System.out.println("Enter the 1st array : ");   
+//         System.out.println("Enter the 1st array : ");
 // 		for(int i=0;i<a_n;i++){
 // 			a[i]=sc.nextInt();
 // 		}
@@ -2377,7 +2377,7 @@
 // class Node{
 //     int data;
 //     Node next;
-//     Node(int x){    
+//     Node(int x){
 //         data=x;
 //         next=null;
 //     }
@@ -2486,7 +2486,7 @@
 // class Node{
 //     int data;
 //     Node next;
-//     Node(int x){    
+//     Node(int x){
 //         data=x;
 //         next=null;
 //     }
@@ -2559,7 +2559,7 @@
 // class Node{
 //     int data;
 //     Node next;
-//     Node(int x){    
+//     Node(int x){
 //         data=x;
 //         next=null;
 //     }
@@ -2636,7 +2636,7 @@
 // class Node{
 //     int data;
 //     Node next;
-//     Node(int x){    
+//     Node(int x){
 //         data=x;
 //         next=null;
 //     }
@@ -2724,7 +2724,7 @@
 // class Node{
 //     int data;
 //     Node next;
-//     Node(int x){    
+//     Node(int x){
 //         data=x;
 //         next=null;
 //     }
@@ -3062,9 +3062,9 @@
 //         Node curr=head;
 //         while(curr.next!=null){
 //             curr=curr.next;
-//         }   
+//         }
 //         head=curr;
-//         return head; 
+//         return head;
 //     }
 
 //     void reverseprint(Node head){
@@ -3152,9 +3152,9 @@
 //     Node reverselist(Node head){
 //         int temp;
 //         Node curr1=head;
-//         Node curr2=head;    
+//         Node curr2=head;
 //         int count1=1;
-       
+
 //         while(curr2.next!=null){
 //             curr2=curr2.next;
 //             count1++;
@@ -3169,8 +3169,8 @@
 //             curr2=curr2.prev;
 //             low++;
 //             high--;
-//         }   
-//         return head; 
+//         }
+//         return head;
 //     }
 // }
 
@@ -3476,7 +3476,7 @@
 //                 tail.next=temp;
 //                 tail=temp;
 //                 tail.next=head;
-//             }    
+//             }
 //             n--;
 //         }
 //         return head;
@@ -3530,20 +3530,20 @@
 // class insert{
 //     Node insertbeg(Node head,int n){
 //         Scanner sc=new Scanner(System.in);
-//         Node tail=null; 
+//         Node tail=null;
 //         Node temp=null;
-//         System.out.println("Enter the elements : ");     
+//         System.out.println("Enter the elements : ");
 //         while(n!=0){
 //             temp=new Node(sc.nextInt());
 //             if(head==null){
 //                 head=temp;
 //                 tail=temp;
 //                 tail.next=head;
-//             }         
+//             }
 //             else{
 //                 temp.next=head;
 //                 tail.next=temp;
-//                 head=temp;                
+//                 head=temp;
 //             }
 //             n--;
 //         }
@@ -3637,7 +3637,7 @@
 //         Node curr=head;
 //         while(curr.next!=head){
 //             curr=curr.next;
-//         }        
+//         }
 //         Node temp=head.next;
 //         curr.next=temp;
 //         head=temp;
@@ -3787,7 +3787,7 @@
 //                 head=temp;
 //             }
 //             else if(head.next==null && temp.data>head.data){
-//                 head.next=temp; 
+//                 head.next=temp;
 //             }
 //             else{
 //                 Node curr=head;
@@ -3892,7 +3892,7 @@
 //             count++;
 //             curr1=curr1.next;
 //         }
-//         Node curr2=head;    
+//         Node curr2=head;
 //         int count2=0;
 //         while(curr2!=null){
 //             count2++;
@@ -4292,7 +4292,7 @@
 
 // <!-- Stack -->
 
-// import java.util.Scanner;   
+// import java.util.Scanner;
 // import java.util.Stack;
 
 // class Test{
@@ -4343,7 +4343,7 @@
 //                 }
 //             }
 //             res[i]=min;
-//             arr[index]=max_value;            
+//             arr[index]=max_value;
 //         }
 //         for(int i=0;i<n;i++){
 //             System.out.print(res[i]+" ");
@@ -4379,7 +4379,7 @@
 //             int min=arr[i];
 //             for(int j=i+1;j<n;j++){
 //                 if(arr[j]<min){
-//                     min=arr[j];  
+//                     min=arr[j];
 //                     index=j;
 //                 }
 //             }
@@ -4696,7 +4696,7 @@
 //                 sk.push(str2);
 //                 str2="";
 //             }
-//         }    
+//         }
 //         if(str2!=""){
 //             sk.push(str2);
 //         }
@@ -4790,7 +4790,7 @@
 //                         flag=1;
 //                         break;
 //                     }
-//                 }    
+//                 }
 //                 if(flag==0){
 //                     System.out.println("Starting point : "+i);
 //                     System.out.println("End point : "+(index-1));
@@ -4879,7 +4879,7 @@
 //             }
 //             for(int i=str1.length()-1;i>=0;i--){
 //                 str3=str3+str2.charAt(i);
-//             }            
+//             }
 //             int flag=0;
 //             for(int i=0;i<str3.length();i++){
 //                 if(str3.charAt(i)!=s2.charAt(i)){
@@ -4914,7 +4914,7 @@
 
 // class anagram{
 //     boolean check_anagram(String s1,String s2){
-        
+
 //     }
 // }
 
@@ -5014,7 +5014,7 @@
 //         Scanner sc=new Scanner(System.in);
 //         int x=sc.nextInt();
 //         int y=sc.nextInt();
-//         System.out.println(x>>y);      
+//         System.out.println(x>>y);
 //     }
 // }
 
@@ -5351,7 +5351,7 @@
 //     }
 // }
 
-// class Test{ 
+// class Test{
 //     public static void main(String[] args){
 //         Scanner sc=new Scanner(System.in);
 //         String var1=sc.nextLine();
@@ -5597,7 +5597,7 @@
 // class Test{
 //     public static void main(String[] args){
 //         Scanner sc=new Scanner(System.in);
-        
+
 //     }
 // }
 
@@ -5778,7 +5778,7 @@
 //                 res[k++]=arr[i];
 //             }
 //         }
-        
+
 //         for(int l=0;l<res.length;l++){
 //             System.out.print(res[l]+" ");
 //         }
@@ -5966,7 +5966,7 @@
 //         if(m==1){
 //             for(int j=0;j<arr[0].length;j++){
 //                 System.out.print(arr[0][j]+" ");
-//             } 
+//             }
 //         }
 //         else if(n==1){
 //             for(int i=0;i<arr.length;i++){
@@ -6169,7 +6169,7 @@
 //                     System.out.println(i+" "+j);
 //                 }
 //             }
-//         }  
+//         }
 //         if(flag==0){
 //             System.out.println("-1");
 //         }
@@ -6186,5 +6186,57 @@
 //         }
 //         array_class ac=new array_class();
 //         ac.index_substring(arr,n);
+//     }
+// }
+
+
+
+// Validate an IP address:
+
+// import java.util.Scanner;
+
+// class ipaddress{
+//     boolean isValid(String str){
+//         String arr[]=str.split("[.]");
+//         if(arr.length!=4 || str.charAt(0)=='.' || str.charAt(str.length()-1)=='.'){
+//             return false;
+//         }
+//         for(int i=0;i<arr.length;i++){
+//             String temp=arr[i];
+//             if(temp.length()==0){
+//                 return false;
+//             }
+//             else if(temp.length()>1){
+//                 if(temp.charAt(0)=='0'){
+//                     return false;
+//                 }
+//             }
+//             int res=0;
+//             for(int j=0;j<temp.length();j++){
+//                 if((temp.charAt(j)>='0' && temp.charAt(j)<='9') == false){
+//                     return false;
+//                 }
+//                 res=res*10+temp.charAt(j)-'0';
+//             }
+//             if(res>255){
+//                 return false;
+//             }
+//         }
+//         return true;
+//     }
+// }
+
+// class Test{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         String str=sc.nextLine();
+//         ipaddress ia=new ipaddress();
+//         boolean res=ia.isValid(str);
+//         if(res==true){
+//             System.out.println("1");
+//         }
+//         else{
+//             System.out.println("0");
+//         }
 //     }
 // }
