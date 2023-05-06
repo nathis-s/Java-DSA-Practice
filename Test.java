@@ -6198,6 +6198,9 @@
 // class ipaddress{
 //     boolean isValid(String str){
 //         String arr[]=str.split("[.]");
+//         for(int i=0;i<arr.length;i++){
+//             System.out.println(arr[i]);
+//         }
 //         if(arr.length!=4 || str.charAt(0)=='.' || str.charAt(str.length()-1)=='.'){
 //             return false;
 //         }
@@ -6240,3 +6243,70 @@
 //         }
 //     }
 // }
+
+
+
+
+// sum of numbers to obtain given input by using only combination of 0's and 1's:
+
+// import java.util.Scanner;
+
+// class num_crun{
+//     void combination(int num){
+//         while(num!=0){
+//             int temp=0;
+//             int copy=num;
+//             int point=1;
+//             while(copy!=0){
+//                 int rem=copy%10;
+//                 if(rem!=0){
+//                     rem=1;
+//                 }
+//                 else{
+//                     rem=0;
+//                 }
+//                 temp=rem*point+temp;
+//                 point*=10;
+//                 copy/=10;
+//             }
+//             System.out.print(temp+" ");
+//             num-=temp;
+//         }
+//     }
+// }
+
+// class Main{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         int num=sc.nextInt();
+//         num_crun nc=new num_crun();
+//         nc.combination(num);
+//     }
+// }
+
+
+
+import java.util.*;
+
+class UserMainCode{
+    public class Result{
+        public final int output1;
+        public final int[] output2;
+
+        public Result(int out1,int[] out2){
+            output1=out1;
+            output2=out2;
+        }
+    }
+
+    public Result longestSubsequence(int[] input1){
+        return new Result(1,input1);
+    }
+}
+
+class Test{
+    public static void main(String[] args){
+        int 
+        UserMainCode umc=new UserMainCode();
+    }
+}
