@@ -6286,27 +6286,106 @@
 
 
 
-import java.util.*;
+// import java.util.*;
 
-class UserMainCode{
-    public class Result{
-        public final int output1;
-        public final int[] output2;
+// class UserMainCode{
+//     public class Result{
+//         public final int output1;
+//         public final int[] output2;
 
-        public Result(int out1,int[] out2){
-            output1=out1;
-            output2=out2;
-        }
-    }
+//         public Result(int out1,int[] out2){
+//             output1=out1;
+//             output2=out2;
+//         }
+//     }
 
-    public Result longestSubsequence(int[] input1){
-        return new Result(1,input1);
-    }
-}
+//     public Result longestSubsequence(int[] input1){
+//         return new Result(1,input1);
+//     }
+// }
 
-class Test{
-    public static void main(String[] args){
-        int 
-        UserMainCode umc=new UserMainCode();
-    }
-}
+// class Test{
+//     public static void main(String[] args){
+//         int
+//         UserMainCode umc=new UserMainCode();
+//     }
+// }
+
+
+
+// return first 10 numbers from the string:
+
+// import java.util.Scanner;
+
+// class num_return{
+//     String first_ten(String str){
+//         int count=1;
+//         String res="";
+//         for(int i=0;i<str.length() && count<=10;i++){
+//             if(str.charAt(i)>='0' && str.charAt(i)<='9'){
+//                 count++;
+//                 res+=str.charAt(i);
+//             }
+//         }
+//         return res;
+//     }
+// }
+
+// class Test{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         String str=sc.nextLine();
+//         num_return nr=new num_return();
+//         System.out.println(nr.first_ten(str));
+//     }
+// }
+
+
+
+// Split an array into two equal Sum subarrays:
+
+// import java.util.Scanner;
+
+// class printArray{
+//     int issplitArray(int arr[]){
+//         int leftsum=0;
+//         for(int i=0;i<arr.length;i++){
+//             leftsum+=arr[i];
+//             int rightsum=0;
+//             for(int j=i+1;j<arr.length;j++){
+//                 rightsum+=arr[j];
+//             }
+//             if(leftsum==rightsum){
+//                 return i+1;
+//             }
+//         }
+//         return -1;
+//     }
+
+//     void isprintArray(int arr[]){
+//         int splitArray=issplitArray(arr);
+//         if(splitArray==-1 || splitArray==arr.length){
+//             System.out.println("Not possible");
+//             return;
+//         }
+//         for(int i=0;i<arr.length;i++){
+//             if(i==splitArray){
+//                 System.out.println();
+//             }
+//             System.out.print(arr[i]+" ");
+//         }
+//     }
+// }
+
+// class Test{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         int n=sc.nextInt();
+//         int arr[]=new int[n];;;
+//         for(int i=0;i<n;i++){
+//             arr[i]=sc.nextInt();
+//         }
+//         printArray pa=new printArray();
+//         pa.isprintArray(arr);
+//     }
+// }
