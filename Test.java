@@ -6352,7 +6352,7 @@
 //         int leftsum=0;
 //         for(int i=0;i<arr.length;i++){
 //             leftsum+=arr[i];
-//             int rightsum=0;
+//             int rightsum=0;  
 //             for(int j=i+1;j<arr.length;j++){
 //                 rightsum+=arr[j];
 //             }
